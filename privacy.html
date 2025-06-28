@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,196 +16,199 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.6;
-            color: #2C3E50;
-            background-color: #FFFFFF;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 16px;
-        }
-        
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #E9ECEF;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 24px;
-            font-weight: 600;
-            color: #2C3E50;
-            text-decoration: none;
-        }
-        
-        .logo img {
-            height: 40px;
-            width: auto;
-        }
-        
+
+```
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        color: #2C3E50;
+        background-color: #FFFFFF;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    
+    /* Header */
+    header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #E9ECEF;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #2C3E50;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+    }
+    
+    .nav-links a {
+        color: #6C757D;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: #5DADE2;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 64px 0;
+        background: linear-gradient(135deg, #F7F9FC 0%, #FFFFFF 100%);
+        text-align: center;
+    }
+    
+    .page-header h1 {
+        font-size: 42px;
+        color: #2C3E50;
+        margin-bottom: 16px;
+    }
+    
+    .page-header p {
+        font-size: 18px;
+        color: #6C757D;
+    }
+    
+    /* Content */
+    .content {
+        padding: 64px 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .content h2 {
+        font-size: 28px;
+        margin: 48px 0 24px;
+        color: #2C3E50;
+    }
+    
+    .content h3 {
+        font-size: 22px;
+        margin: 32px 0 16px;
+        color: #2C3E50;
+    }
+    
+    .content p {
+        margin-bottom: 20px;
+        color: #6C757D;
+        line-height: 1.8;
+    }
+    
+    .content ul {
+        margin-bottom: 20px;
+        padding-left: 32px;
+        color: #6C757D;
+    }
+    
+    .content li {
+        margin-bottom: 12px;
+        line-height: 1.8;
+    }
+    
+    .highlight-box {
+        background: #F7F9FC;
+        border-left: 4px solid #5DADE2;
+        padding: 24px;
+        margin: 32px 0;
+        border-radius: 8px;
+    }
+    
+    .highlight-box h3 {
+        margin-top: 0;
+        color: #5DADE2;
+    }
+    
+    /* Footer */
+    footer {
+        background: #2C3E50;
+        color: white;
+        padding: 64px 0 32px;
+        margin-top: 100px;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .footer-section h4 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        color: #5DADE2;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+    }
+    
+    .footer-section a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        display: block;
+        padding: 6px 0;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-section a:hover {
+        color: #5DADE2;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 32px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
         .nav-links {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: #6C757D;
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #5DADE2;
-        }
-        
-        /* Page Header */
-        .page-header {
-            padding: 64px 0;
-            background: linear-gradient(135deg, #F7F9FC 0%, #FFFFFF 100%);
-            text-align: center;
+            display: none;
         }
         
         .page-header h1 {
-            font-size: 42px;
-            color: #2C3E50;
-            margin-bottom: 16px;
+            font-size: 32px;
         }
         
-        .page-header p {
-            font-size: 18px;
-            color: #6C757D;
-        }
-        
-        /* Content */
         .content {
-            padding: 64px 0;
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 48px 16px;
         }
-        
-        .content h2 {
-            font-size: 28px;
-            margin: 48px 0 24px;
-            color: #2C3E50;
-        }
-        
-        .content h3 {
-            font-size: 22px;
-            margin: 32px 0 16px;
-            color: #2C3E50;
-        }
-        
-        .content p {
-            margin-bottom: 20px;
-            color: #6C757D;
-            line-height: 1.8;
-        }
-        
-        .content ul {
-            margin-bottom: 20px;
-            padding-left: 32px;
-            color: #6C757D;
-        }
-        
-        .content li {
-            margin-bottom: 12px;
-            line-height: 1.8;
-        }
-        
-        .highlight-box {
-            background: #F7F9FC;
-            border-left: 4px solid #5DADE2;
-            padding: 24px;
-            margin: 32px 0;
-            border-radius: 8px;
-        }
-        
-        .highlight-box h3 {
-            margin-top: 0;
-            color: #5DADE2;
-        }
-        
-        /* Footer */
-        footer {
-            background: #2C3E50;
-            color: white;
-            padding: 64px 0 32px;
-            margin-top: 100px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 48px;
-            margin-bottom: 48px;
-        }
-        
-        .footer-section h4 {
-            font-size: 18px;
-            margin-bottom: 16px;
-            color: #5DADE2;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-        }
-        
-        .footer-section a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            display: block;
-            padding: 6px 0;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-section a:hover {
-            color: #5DADE2;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.6);
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .page-header h1 {
-                font-size: 32px;
-            }
-            
-            .content {
-                padding: 48px 16px;
-            }
-        }
-    </style>
+    }
+</style>
+```
+
 </head>
 <body>
     <!-- Header -->
@@ -223,158 +227,154 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <p>Your privacy is our priority. Clear Days is designed with privacy at its core.</p>
+```
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Your privacy is our priority. Clear Days is designed with privacy at its core.</p>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="content">
+    <div class="container">
+        <p><strong>Last Updated: January 2025</strong></p>
+        
+        <div class="highlight-box">
+            <h3>🔒 Privacy First Design</h3>
+            <p>Clear Days stores all your data locally on your device. We don't have servers, we don't track you, and we can't see your habits or progress. Your journey is yours alone.</p>
         </div>
-    </section>
 
-    <!-- Content -->
-    <section class="content">
-        <div class="container">
-            <p><strong>Last Updated: January 2025</strong></p>
-            
-            <div class="highlight-box">
-                <h3>🔒 Privacy First Design</h3>
-                <p>Clear Days stores all your data locally on your device. We don't have servers, we don't track you, and we can't see your habits or progress. Your journey is yours alone.</p>
-            </div>
+        <h2>1. Information Collection</h2>
+        <p>Clear Days is designed to respect your privacy:</p>
+        <ul>
+            <li><strong>No Account Required:</strong> You can use Clear Days without creating an account or providing any personal information.</li>
+            <li><strong>Local Storage:</strong> All habit data, including names, dates, and progress, is stored locally on your device using Core Data.</li>
+            <li><strong>No Analytics:</strong> We do not use any third-party analytics or tracking services.</li>
+            <li><strong>No Ads:</strong> Clear Days is ad-free and always will be.</li>
+        </ul>
 
-            <h2>1. Information Collection</h2>
-            <p>Clear Days is designed to respect your privacy:</p>
-            <ul>
-                <li><strong>No Account Required:</strong> You can use Clear Days without creating an account or providing any personal information.</li>
-                <li><strong>Local Storage:</strong> All habit data, including names, dates, and progress, is stored locally on your device using Core Data.</li>
-                <li><strong>No Analytics:</strong> We do not use any third-party analytics or tracking services.</li>
-                <li><strong>No Ads:</strong> Clear Days is ad-free and always will be.</li>
-            </ul>
+        <h2>2. Data Storage</h2>
+        <h3>Local Data</h3>
+        <p>Your habit tracking data is stored exclusively on your device:</p>
+        <ul>
+            <li>Habit names and categories</li>
+            <li>Quit dates and progress tracking</li>
+            <li>Milestone achievements</li>
+            <li>App preferences and settings</li>
+        </ul>
 
-            <h2>2. Data Storage</h2>
-            <h3>Local Data</h3>
-            <p>Your habit tracking data is stored exclusively on your device:</p>
-            <ul>
-                <li>Habit names and categories</li>
-                <li>Quit dates and progress tracking</li>
-                <li>Milestone achievements</li>
-                <li>App preferences and settings</li>
-            </ul>
 
-            <h3>iCloud Sync (Optional)</h3>
-            <p>If you choose to enable iCloud sync:</p>
-            <ul>
-                <li>Your data syncs across your Apple devices using your iCloud account</li>
-                <li>Apple's end-to-end encryption protects your data</li>
-                <li>We cannot access your iCloud data</li>
-                <li>You can disable sync at any time in Settings</li>
-            </ul>
 
-            <h2>3. Data Sharing</h2>
-            <p>We have a simple policy: <strong>We don't share your data because we don't have it.</strong></p>
-            <ul>
-                <li>No data is transmitted to our servers (we don't have any)</li>
-                <li>No data is shared with third parties</li>
-                <li>No data is sold or used for marketing</li>
-                <li>No data leaves your device unless you explicitly share it</li>
-            </ul>
+        <h2>3. Data Sharing</h2>
+        <p>We have a simple policy: <strong>We don't share your data because we don't have it.</strong></p>
+        <ul>
+            <li>No data is transmitted to our servers (we don't have any)</li>
+            <li>No data is shared with third parties</li>
+            <li>No data is sold or used for marketing</li>
+            <li>No data leaves your device unless you explicitly share it</li>
+        </ul>
 
-            <h2>4. Your Control</h2>
-            <p>You have complete control over your data:</p>
-            <ul>
-                <li><strong>Export:</strong> Export your progress data at any time</li>
-                <li><strong>Delete:</strong> Remove individual habits or all data instantly</li>
-                <li><strong>Reset:</strong> Start fresh whenever you want</li>
-                <li><strong>Uninstall:</strong> Deleting the app removes all local data</li>
-            </ul>
+        <h2>4. Your Control</h2>
+        <p>You have complete control over your data:</p>
+        <ul>
+            <li><strong>Export:</strong> Export your progress data at any time</li>
+            <li><strong>Delete:</strong> Remove individual habits or all data instantly</li>
+            <li><strong>Reset:</strong> Start fresh whenever you want</li>
+            <li><strong>Uninstall:</strong> Deleting the app removes all local data</li>
+        </ul>
 
-            <h2>5. Security</h2>
-            <p>Your data is protected by:</p>
-            <ul>
-                <li>iOS's built-in security features</li>
-                <li>Device passcode/biometric protection</li>
-                <li>Encrypted device storage</li>
-                <li>Optional iCloud end-to-end encryption</li>
-            </ul>
+        <h2>5. Security</h2>
+        <p>Your data is protected by:</p>
+        <ul>
+            <li>iOS's built-in security features</li>
+            <li>Device passcode/biometric protection</li>
+            <li>Encrypted device storage</li>
+            <li>Optional iCloud end-to-end encryption</li>
+        </ul>
 
-            <h2>6. Notifications</h2>
-            <p>If you enable notifications:</p>
-            <ul>
-                <li>They are scheduled locally on your device</li>
-                <li>No data is sent to push notification servers</li>
-                <li>You can customize or disable them anytime</li>
-            </ul>
+        <h2>6. Notifications</h2>
+        <p>If you enable notifications:</p>
+        <ul>
+            <li>They are scheduled locally on your device</li>
+            <li>No data is sent to push notification servers</li>
+            <li>You can customize or disable them anytime</li>
+        </ul>
 
-            <h2>7. Widgets</h2>
-            <p>Home screen widgets:</p>
-            <ul>
-                <li>Display data stored on your device</li>
-                <li>Update locally without network requests</li>
-                <li>Respect your privacy settings</li>
-            </ul>
+        <h2>7. Widgets</h2>
+        <p>Home screen widgets:</p>
+        <ul>
+            <li>Display data stored on your device</li>
+            <li>Update locally without network requests</li>
+            <li>Respect your privacy settings</li>
+        </ul>
 
-            <h2>8. Children's Privacy</h2>
-            <p>Clear Days does not knowingly collect information from children under 13. The app stores all data locally and requires no personal information to function.</p>
+        <h2>8. Children's Privacy</h2>
+        <p>Clear Days does not knowingly collect information from children under 13. The app stores all data locally and requires no personal information to function.</p>
 
-            <h2>9. Changes to This Policy</h2>
-            <p>If we update this privacy policy, we will:</p>
-            <ul>
-                <li>Update the "Last Updated" date</li>
-                <li>Notify you through the app if changes are significant</li>
-                <li>Always maintain our commitment to privacy-first design</li>
-            </ul>
+        <h2>9. Changes to This Policy</h2>
+        <p>If we update this privacy policy, we will:</p>
+        <ul>
+            <li>Update the "Last Updated" date</li>
+            <li>Notify you through the app if changes are significant</li>
+            <li>Always maintain our commitment to privacy-first design</li>
+        </ul>
 
-            <h2>10. Contact Us</h2>
-            <p>If you have questions about privacy or how Clear Days works:</p>
-            <ul>
-                <li>Email: <a href="mailto:support@cleardays.app" style="color: #5DADE2;">support@cleardays.app</a></li>
-                <li>Visit our <a href="support.html" style="color: #5DADE2;">Support page</a></li>
-            </ul>
+        <h2>10. Contact Us</h2>
+        <p>If you have questions about privacy or how Clear Days works:</p>
+        <ul>
+            <li>Email: <a href="mailto:dev.blsmdrive@gmail.com" style="color: #5DADE2;">dev.blsmdrive@gmail.com</a></li>
+            <li>Visit our <a href="support.html" style="color: #5DADE2;">Support page</a></li>
+        </ul>
 
-            <div class="highlight-box" style="margin-top: 48px;">
-                <h3>Our Promise</h3>
-                <p>Clear Days will always be private by design. We believe your journey to breaking bad habits is personal, and your data should remain that way.</p>
-            </div>
+        <div class="highlight-box" style="margin-top: 48px;">
+            <h3>Our Promise</h3>
+            <p>Clear Days will always be private by design. We believe your journey to breaking bad habits is personal, and your data should remain that way.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="#">Download</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="support.html">Help Center</a></li>
-                        <li><a href="support.html#faq">FAQ</a></li>
-                        <li><a href="support.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:support@cleardays.app">Email</a></li>
-                    </ul>
-                </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Clear Days. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="support.html">Help Center</a></li>
+                    <li><a href="support.html#faq">FAQ</a></li>
+                    <li><a href="support.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:dev.blsmdrive@gmail.com">Email</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Clear Days. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+```
+
 </body>
 </html>
