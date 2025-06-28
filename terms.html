@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,199 +15,196 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-```
-    body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        line-height: 1.6;
-        color: #2C3E50;
-        background-color: #FFFFFF;
-    }
-    
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 16px;
-    }
-    
-    /* Header */
-    header {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid #E9ECEF;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-    }
-    
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-size: 24px;
-        font-weight: 600;
-        color: #2C3E50;
-        text-decoration: none;
-    }
-    
-    .logo img {
-        height: 40px;
-        width: auto;
-    }
-    
-    .nav-links {
-        display: flex;
-        gap: 32px;
-        list-style: none;
-    }
-    
-    .nav-links a {
-        color: #6C757D;
-        text-decoration: none;
-        font-size: 16px;
-        transition: color 0.3s ease;
-    }
-    
-    .nav-links a:hover,
-    .nav-links a.active {
-        color: #5DADE2;
-    }
-    
-    /* Page Header */
-    .page-header {
-        padding: 64px 0;
-        background: linear-gradient(135deg, #F7F9FC 0%, #FFFFFF 100%);
-        text-align: center;
-    }
-    
-    .page-header h1 {
-        font-size: 42px;
-        color: #2C3E50;
-        margin-bottom: 16px;
-    }
-    
-    .page-header p {
-        font-size: 18px;
-        color: #6C757D;
-    }
-    
-    /* Content */
-    .content {
-        padding: 64px 0;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .content h2 {
-        font-size: 28px;
-        margin: 48px 0 24px;
-        color: #2C3E50;
-    }
-    
-    .content h3 {
-        font-size: 22px;
-        margin: 32px 0 16px;
-        color: #2C3E50;
-    }
-    
-    .content p {
-        margin-bottom: 20px;
-        color: #6C757D;
-        line-height: 1.8;
-    }
-    
-    .content ul {
-        margin-bottom: 20px;
-        padding-left: 32px;
-        color: #6C757D;
-    }
-    
-    .content li {
-        margin-bottom: 12px;
-        line-height: 1.8;
-    }
-    
-    .highlight-box {
-        background: #F7F9FC;
-        border-left: 4px solid #5DADE2;
-        padding: 24px;
-        margin: 32px 0;
-        border-radius: 8px;
-    }
-    
-    .highlight-box h3 {
-        margin-top: 0;
-        color: #5DADE2;
-    }
-    
-    /* Footer */
-    footer {
-        background: #2C3E50;
-        color: white;
-        padding: 64px 0 32px;
-        margin-top: 100px;
-    }
-    
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 48px;
-        margin-bottom: 48px;
-    }
-    
-    .footer-section h4 {
-        font-size: 18px;
-        margin-bottom: 16px;
-        color: #5DADE2;
-    }
-    
-    .footer-section ul {
-        list-style: none;
-    }
-    
-    .footer-section a {
-        color: rgba(255, 255, 255, 0.8);
-        text-decoration: none;
-        display: block;
-        padding: 6px 0;
-        transition: color 0.3s ease;
-    }
-    
-    .footer-section a:hover {
-        color: #5DADE2;
-    }
-    
-    .footer-bottom {
-        text-align: center;
-        padding-top: 32px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        color: rgba(255, 255, 255, 0.6);
-    }
-    
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            background-color: #FFFFFF;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #E9ECEF;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2C3E50;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
         .nav-links {
-            display: none;
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #6C757D;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #5DADE2;
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 64px 0;
+            background: linear-gradient(135deg, #F7F9FC 0%, #FFFFFF 100%);
+            text-align: center;
         }
         
         .page-header h1 {
-            font-size: 32px;
+            font-size: 42px;
+            color: #2C3E50;
+            margin-bottom: 16px;
         }
         
-        .content {
-            padding: 48px 16px;
+        .page-header p {
+            font-size: 18px;
+            color: #6C757D;
         }
-    }
-</style>
-```
-
+        
+        /* Content */
+        .content {
+            padding: 64px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content h2 {
+            font-size: 28px;
+            margin: 48px 0 24px;
+            color: #2C3E50;
+        }
+        
+        .content h3 {
+            font-size: 22px;
+            margin: 32px 0 16px;
+            color: #2C3E50;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+            color: #6C757D;
+            line-height: 1.8;
+        }
+        
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 32px;
+            color: #6C757D;
+        }
+        
+        .content li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background: #F7F9FC;
+            border-left: 4px solid #5DADE2;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h3 {
+            margin-top: 0;
+            color: #5DADE2;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2C3E50;
+            color: white;
+            padding: 64px 0 32px;
+            margin-top: 100px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+        
+        .footer-section h4 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #5DADE2;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            padding: 6px 0;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: #5DADE2;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .content {
+                padding: 48px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -227,215 +223,212 @@
         </nav>
     </header>
 
-```
-<!-- Page Header -->
-<section class="page-header">
-    <div class="container">
-        <h1>Terms of Service</h1>
-        <p>Please read these terms carefully before using Clear Days.</p>
-    </div>
-</section>
-
-<!-- Content -->
-<section class="content">
-    <div class="container">
-        <p><strong>Effective Date: January 2025</strong></p>
-        
-        <div class="highlight-box">
-            <h3>📋 Simple Terms</h3>
-            <p>Clear Days is a personal habit tracking tool. Use it to track your progress, celebrate milestones, and improve your life. We respect your privacy and your journey.</p>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Please read these terms carefully before using Clear Days.</p>
         </div>
+    </section>
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using Clear Days ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
-
-        <h2>2. Description of Service</h2>
-        <p>Clear Days is a habit tracking application that helps users monitor their progress in breaking unwanted habits. The App provides:</p>
-        <ul>
-            <li>Local habit tracking and progress monitoring</li>
-            <li>Milestone notifications and achievements</li>
-            <li>Data visualization and statistics</li>
-            <li>Optional iCloud synchronization</li>
-            <li>Home screen widgets</li>
-        </ul>
-
-        <h2>3. User Responsibilities</h2>
-        <h3>You agree to:</h3>
-        <ul>
-            <li>Use the App for personal, non-commercial purposes only</li>
-            <li>Provide accurate information when creating habits</li>
-            <li>Not use the App for any illegal or unauthorized purpose</li>
-            <li>Not attempt to reverse engineer or modify the App</li>
-            <li>Take responsibility for maintaining your device security</li>
-        </ul>
-
-        <h2>3. Privacy and Data</h2>
-        <p>Your privacy is important to us. Key points:</p>
-        <ul>
-            <li>All data is stored locally on your device</li>
-            <li>We do not collect, store, or have access to your personal data</li>
-            <li>No cloud synchronization or external data storage</li>
-            <li>For complete details, see our <a href="privacy.html" style="color: #5DADE2;">Privacy Policy</a></li>
-        </ul>
-
-        <h2>4. Medical Disclaimer</h2>
-        <div class="highlight-box">
-            <h3>⚕️ Important Health Notice</h3>
-            <p>Clear Days is not a medical app and should not be used as a substitute for professional medical advice, diagnosis, or treatment. If you're dealing with addiction or serious habits, please consult with healthcare professionals.</p>
-        </div>
-        
-        <p>The App is designed as a motivational tool and progress tracker. It is not intended to:</p>
-        <ul>
-            <li>Diagnose, treat, cure, or prevent any medical condition</li>
-            <li>Replace professional addiction counseling or therapy</li>
-            <li>Provide medical or psychological advice</li>
-        </ul>
-
-        <h2>5. Australian Consumer Law</h2>
-        <p>As an Australian business, we acknowledge that:</p>
-        <ul>
-            <li>Nothing in these Terms excludes, restricts, or modifies any consumer rights under the Australian Consumer Law (ACL)</li>
-            <li>Our goods and services come with guarantees that cannot be excluded under Australian Consumer Law</li>
-            <li>You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage</li>
-            <li>You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure</li>
-        </ul>
-
-        <h2>6. Intellectual Property</h2>
-        <p>All content, features, and functionality of Clear Days are owned by us and are protected by international copyright, trademark, and other intellectual property laws. You may not:</p>
-        <ul>
-            <li>Copy, modify, or distribute the App</li>
-            <li>Use our trademarks without permission</li>
-            <li>Remove any copyright or proprietary notices</li>
-        </ul>
-
-        <h2>7. App Store Terms</h2>
-        <p>Your use of Clear Days is also subject to:</p>
-        <ul>
-            <li>Apple's App Store Terms of Service</li>
-            <li>Apple's End User License Agreement (EULA)</li>
-            <li>Any other terms imposed by Apple Inc.</li>
-        </ul>
-
-        <h2>8. Disclaimers and Limitations</h2>
-        <h3>No Warranties</h3>
-        <p>Clear Days is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to:</p>
-        <ul>
-            <li>Merchantability or fitness for a particular purpose</li>
-            <li>Accuracy, reliability, or completeness of the App</li>
-            <li>Uninterrupted or error-free operation</li>
-            <li>Results from use of the App</li>
-        </ul>
-
-        <h3>Limitation of Liability</h3>
-        <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from:</p>
-        <ul>
-            <li>Your use or inability to use the App</li>
-            <li>Any errors or omissions in the App</li>
-            <li>Loss of data or device issues</li>
-            <li>Reliance on information provided by the App</li>
-        </ul>
-
-        <h2>9. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless Clear Days, its developers, and affiliates from any claims, damages, or expenses arising from your use of the App or violation of these Terms.</p>
-
-        <h2>10. Updates and Changes</h2>
-        <h3>App Updates</h3>
-        <p>We may update the App periodically to:</p>
-        <ul>
-            <li>Add new features or improvements</li>
-            <li>Fix bugs or security issues</li>
-            <li>Comply with changes in applicable laws</li>
-            <li>Enhance user experience</li>
-        </ul>
-
-        <h3>Terms Updates</h3>
-        <p>We reserve the right to modify these Terms at any time. If we make material changes:</p>
-        <ul>
-            <li>We'll update the "Effective Date" at the top</li>
-            <li>We'll notify you through the App if changes are significant</li>
-            <li>Continued use after changes constitutes acceptance</li>
-        </ul>
-
-        <h2>11. Termination</h2>
-        <p>You may stop using Clear Days at any time by deleting the App from your device. We reserve the right to:</p>
-        <ul>
-            <li>Discontinue the App with reasonable notice</li>
-            <li>Modify or discontinue features</li>
-            <li>Terminate access for violations of these Terms</li>
-        </ul>
-
-        <h2>12. Children's Use</h2>
-        <p>Clear Days is not intended for children under 13 years of age. We do not knowingly collect information from children under 13. If you are under 13, please do not use the App.</p>
-
-        <h2>13. Export Control</h2>
-        <p>You may not use or export the App except as authorized by United States law and the laws of the jurisdiction in which the App was obtained.</p>
-
-        <h2>14. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of Australia and the State of New South Wales, without regard to conflict of law principles. Any disputes shall be resolved in the courts of New South Wales, Australia.</p>
-
-        <h2>15. Business Information</h2>
-        <p>Clear Days is operated by an Australian sole trader based in New South Wales. For business inquiries or legal matters, please contact us at the email address provided below.</p>
-
-        <h2>16. Severability</h2>
-        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
-
-        <h2>17. Entire Agreement</h2>
-        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Clear Days regarding the use of the App and supersede all prior agreements and understandings.</p>
-
-        <h2>18. Contact Information</h2>
-        <p>If you have any questions about these Terms of Service, please contact us at:</p>
-        <ul>
-            <li>Email: <a href="mailto:dev.blsmdrive@gmail.com" style="color: #5DADE2;">dev.blsmdrive@gmail.com</a></li>
-            <li>Support Page: <a href="support.html" style="color: #5DADE2;">cleardays.app/support</a></li>
-        </ul>
-
-        <div class="highlight-box" style="margin-top: 48px;">
-            <h3>Thank You</h3>
-            <p>Thank you for choosing Clear Days to help track your journey to better habits. We're honored to be part of your progress and wish you success in achieving your goals.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Product</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="#">Download</a></li>
-                </ul>
+    <!-- Content -->
+    <section class="content">
+        <div class="container">
+            <p><strong>Effective Date: January 2025</strong></p>
+            
+            <div class="highlight-box">
+                <h3>📋 Simple Terms</h3>
+                <p>Clear Days is a personal habit tracking tool. Use it to track your progress, celebrate milestones, and improve your life. We respect your privacy and your journey.</p>
             </div>
-            <div class="footer-section">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="support.html">Help Center</a></li>
-                    <li><a href="support.html#faq">FAQ</a></li>
-                    <li><a href="support.html#contact">Contact</a></li>
-                </ul>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using Clear Days ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Clear Days is a habit tracking application that helps users monitor their progress in breaking unwanted habits. The App provides:</p>
+            <ul>
+                <li>Local habit tracking and progress monitoring</li>
+                <li>Milestone notifications and achievements</li>
+                <li>Data visualization and statistics</li>
+                <li>Optional iCloud synchronization</li>
+                <li>Home screen widgets</li>
+            </ul>
+
+            <h2>3. User Responsibilities</h2>
+            <h3>You agree to:</h3>
+            <ul>
+                <li>Use the App for personal, non-commercial purposes only</li>
+                <li>Provide accurate information when creating habits</li>
+                <li>Not use the App for any illegal or unauthorized purpose</li>
+                <li>Not attempt to reverse engineer or modify the App</li>
+                <li>Take responsibility for maintaining your device security</li>
+            </ul>
+
+            <h2>3. Privacy and Data</h2>
+            <p>Your privacy is important to us. Key points:</p>
+            <ul>
+                <li>All data is stored locally on your device</li>
+                <li>We do not collect, store, or have access to your personal data</li>
+                <li>No cloud synchronization or external data storage</li>
+                <li>For complete details, see our <a href="privacy.html" style="color: #5DADE2;">Privacy Policy</a></li>
+            </ul>
+
+            <h2>4. Medical Disclaimer</h2>
+            <div class="highlight-box">
+                <h3>⚕️ Important Health Notice</h3>
+                <p>Clear Days is not a medical app and should not be used as a substitute for professional medical advice, diagnosis, or treatment. If you're dealing with addiction or serious habits, please consult with healthcare professionals.</p>
             </div>
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="mailto:dev.blsmdrive@gmail.com">Email</a></li>
-                </ul>
+            
+            <p>The App is designed as a motivational tool and progress tracker. It is not intended to:</p>
+            <ul>
+                <li>Diagnose, treat, cure, or prevent any medical condition</li>
+                <li>Replace professional addiction counseling or therapy</li>
+                <li>Provide medical or psychological advice</li>
+            </ul>
+
+            <h2>5. Australian Consumer Law</h2>
+            <p>As an Australian business, we acknowledge that:</p>
+            <ul>
+                <li>Nothing in these Terms excludes, restricts, or modifies any consumer rights under the Australian Consumer Law (ACL)</li>
+                <li>Our goods and services come with guarantees that cannot be excluded under Australian Consumer Law</li>
+                <li>You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage</li>
+                <li>You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure</li>
+            </ul>
+
+            <h2>6. Intellectual Property</h2>
+            <p>All content, features, and functionality of Clear Days are owned by us and are protected by international copyright, trademark, and other intellectual property laws. You may not:</p>
+            <ul>
+                <li>Copy, modify, or distribute the App</li>
+                <li>Use our trademarks without permission</li>
+                <li>Remove any copyright or proprietary notices</li>
+            </ul>
+
+            <h2>7. App Store Terms</h2>
+            <p>Your use of Clear Days is also subject to:</p>
+            <ul>
+                <li>Apple's App Store Terms of Service</li>
+                <li>Apple's End User License Agreement (EULA)</li>
+                <li>Any other terms imposed by Apple Inc.</li>
+            </ul>
+
+            <h2>8. Disclaimers and Limitations</h2>
+            <h3>No Warranties</h3>
+            <p>Clear Days is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to:</p>
+            <ul>
+                <li>Merchantability or fitness for a particular purpose</li>
+                <li>Accuracy, reliability, or completeness of the App</li>
+                <li>Uninterrupted or error-free operation</li>
+                <li>Results from use of the App</li>
+            </ul>
+
+            <h3>Limitation of Liability</h3>
+            <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from:</p>
+            <ul>
+                <li>Your use or inability to use the App</li>
+                <li>Any errors or omissions in the App</li>
+                <li>Loss of data or device issues</li>
+                <li>Reliance on information provided by the App</li>
+            </ul>
+
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless Clear Days, its developers, and affiliates from any claims, damages, or expenses arising from your use of the App or violation of these Terms.</p>
+
+            <h2>10. Updates and Changes</h2>
+            <h3>App Updates</h3>
+            <p>We may update the App periodically to:</p>
+            <ul>
+                <li>Add new features or improvements</li>
+                <li>Fix bugs or security issues</li>
+                <li>Comply with changes in applicable laws</li>
+                <li>Enhance user experience</li>
+            </ul>
+
+            <h3>Terms Updates</h3>
+            <p>We reserve the right to modify these Terms at any time. If we make material changes:</p>
+            <ul>
+                <li>We'll update the "Effective Date" at the top</li>
+                <li>We'll notify you through the App if changes are significant</li>
+                <li>Continued use after changes constitutes acceptance</li>
+            </ul>
+
+            <h2>11. Termination</h2>
+            <p>You may stop using Clear Days at any time by deleting the App from your device. We reserve the right to:</p>
+            <ul>
+                <li>Discontinue the App with reasonable notice</li>
+                <li>Modify or discontinue features</li>
+                <li>Terminate access for violations of these Terms</li>
+            </ul>
+
+            <h2>12. Children's Use</h2>
+            <p>Clear Days is not intended for children under 13 years of age. We do not knowingly collect information from children under 13. If you are under 13, please do not use the App.</p>
+
+            <h2>13. Export Control</h2>
+            <p>You may not use or export the App except as authorized by United States law and the laws of the jurisdiction in which the App was obtained.</p>
+
+            <h2>14. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of Australia and the State of New South Wales, without regard to conflict of law principles. Any disputes shall be resolved in the courts of New South Wales, Australia.</p>
+
+            <h2>15. Business Information</h2>
+            <p>Clear Days is operated by an Australian sole trader based in New South Wales. For business inquiries or legal matters, please contact us at the email address provided below.</p>
+
+            <h2>16. Severability</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect.</p>
+
+            <h2>17. Entire Agreement</h2>
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Clear Days regarding the use of the App and supersede all prior agreements and understandings.</p>
+
+            <h2>18. Contact Information</h2>
+            <p>If you have any questions about these Terms of Service, please contact us at:</p>
+            <ul>
+                <li>Email: <a href="mailto:dev.blsmdrive@gmail.com" style="color: #5DADE2;">dev.blsmdrive@gmail.com</a></li>
+                <li>Support Page: <a href="support.html" style="color: #5DADE2;">cleardays.app/support</a></li>
+            </ul>
+
+            <div class="highlight-box" style="margin-top: 48px;">
+                <h3>Thank You</h3>
+                <p>Thank you for choosing Clear Days to help track your journey to better habits. We're honored to be part of your progress and wish you success in achieving your goals.</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Clear Days. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-```
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support.html">Help Center</a></li>
+                        <li><a href="support.html#faq">FAQ</a></li>
+                        <li><a href="support.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:dev.blsmdrive@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clear Days. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
